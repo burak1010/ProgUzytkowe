@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage[a4paper,left=3.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+%%\usepackage[MeX]{polski}
+\usepackage[cp1250]{inputenc}
+\usepackage{polski}
+%%\usepackage[utf8]{inputenc}
+\usepackage[pdftex]{hyperref}
+\usepackage{makeidx}
+\usepackage[tableposition=top]{caption}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{amsmath} %pakiet matematyczny
+\usepackage{amssymb} %pakiet dodatkowych symboli
+\begin{document}
+Tu umieszczamy kod TeXa, który bedzie kompilowany.
+
+\tableofcontents
+\section{tytul}
+\subsection{podtytul}
+
+\cite{dote:ks} etykieta
+
+\begin{itemize}
+	\item pierwszy punkt
+	\item drugi 
+	\item trzeci
+	
+	\begin{itemize}
+		\item pierwszy podpunkt
+		\item drugi
+\end{itemize}
+	
+	\begin{enumerate}[I)]
+		\item pierwszy 
+		\item drugi
+	\end{enumerate}
+	
+\end{itemize}
+
+	\begin{enumerate}
+		\item pierwszy 
+		\item drugi
+	\end{enumerate}
+
+\begin{description}
+	\item [itemize] wypunktowanie
+	\item [enumerate] lista numerowana
+\end{description}
+
+\begin{thebibliography}{4}
+	\bibitem{dote:ks} Donald E. Knuth, \TeX Przewodnik u¿ytkownika, WNT, Warszawa
+\end{thebibliography}
+
+\end{document}
