@@ -13,6 +13,8 @@
 \usepackage{multirow}
 \usepackage{amsmath} %pakiet matematyczny
 \usepackage{amssymb} %pakiet dodatkowych symboli
+%\usepackage{colortbl}
+\usepackage[table]{xcolor} % pakiet kolorów
 \begin{document}
 	\begin{table}
 		\centering
@@ -26,11 +28,10 @@
 					\hline	
 					\hline
 			\end{tabular}
-			\caption{Praca Domowa: Tabela 11}
-			\label{tab: 11}
+			\caption{Praca Domowa-Tabela 11}
+			\label{tab: 1}
 	\end{table}
-	
-		\begin{table}
+	\begin{table}
 		\centering
 			\begin{tabular}{|r|l|}
 				\hline
@@ -41,22 +42,53 @@
 					1984 & decimal \\
 					\hline
 			\end{tabular}
-			\caption{Praca Domowa: Tabela bez podpisu}
-			\label{tab: bez}
-	\end{table}
-	
+		\caption{Praca Domowa-Tabela bez podpisu}
+		\label{tab: 2}
+	\end{table}	
 	\begin{table}
 		\centering
-			\begin{tabular}{|r|l|}
-			%%{|c|c|c|c|c|c|c|c|c}
-					  %%\multicolumn{6}{|c|}{Primes} \\ \hline
-					   %%& 2 & 3 & 5 & 7 & \\ \hline
-						%%\multi{6}{4}{*}{Powers} \\
-						%%\multirow{2}{*}{504} & 3 & 2 & 0 & 1 & \\
-					\multicolumn{4}{c}{Primes} \\
-					2 & 3 & 5 & 7  \\ 				
+			\begin{tabular}{|c|c|c|c|c|c|c|c c}
+				\cline{4-7}
+					\multicolumn{3}{c|}{} & \multicolumn{4}{|c|}{Primes} \\ \cline{4-7}
+					\multicolumn{3}{c|}{} & 2 & 3 & 5 & 7 \\ \cline{1-7}
+					\multirow{2}{*}{Powers} & \multicolumn{2}{c|}{504} & 3 & 2 & 0 & 1  \\ \cline{2-7}
+																	& \multicolumn{2}{c|}{540} & 2 & 3 & 1 & 0  \\ \cline{1-7}
+					\multirow{2}{*}{Powers} & \multicolumn{2}{c|}{gcd} & 2 & 2 & 0 & 0 & min \\ \cline{2-7}
+																	& \multicolumn{2}{c|}{lcm} & 3 & 3 & 1 & 1 & max \\ \cline{1-7}
 			\end{tabular}
-			\caption{Praca Domowa: Tabela 15}
-			\label{tab: 15}
+		\caption{Praca Domowa-Tabela 15}
+		\label{tab: 3}
+	\end{table}	
+	\begin{table}
+		\centering
+		\rowcolors{1}{red}{pink}
+			\begin{tabular}{ccc}
+				czerwony & 1 & 2 \\ 
+				ró?owy & 1 & 2 \\ 
+				czerwony & 1 & 2 \\
+				ró?owy & 1 & 2 \\
+			\end{tabular}
+		\caption{Praca Domowa-kolorowa}
+		\label{tab: 4}
 	\end{table}
+	\begin{figure}[h!]
+		\caption{A picture of a gull.}
+		\centering
+		\includegraphics[width=0.5\textwidth]{gull.png}
+	\end{figure}
+	\begin{figure}[h!]
+		\caption{A picture of the same gull looking the other way!}
+		\centering
+		\reflectbox{%
+		\includegraphics[width=0.5\textwidth]{gull.png}
+		}
+	\end{figure}
+	\begin{figure}[h!]
+		\centering
+		\caption{Wy?wietlanie wielu obrazków jednocze?nie.}
+			\reflectbox{\includegraphics[scale=0.1]{tygrys.jpg}}
+			\includegraphics[scale=0.15]{tygrys.jpg}
+			\reflectbox{\includegraphics[scale=0.2]{tygrys.jpg}}
+			\includegraphics[scale=0.3]{tygrys.jpg}
+	\end{figure}
 \end{document}
