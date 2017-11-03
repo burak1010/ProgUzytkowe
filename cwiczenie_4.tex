@@ -1,0 +1,54 @@
+\documentclass[]{beamer}
+%\usepackage[MeX]{polski}
+\usepackage[cp1250]{inputenc}
+\usepackage{polski}
+%\usepackage[utf8]{inputenc}
+\beamersetaveragebackground{blue!10} % {kolor slajdu!przezroczystkosc_koloru}
+\usetheme{Warsaw}
+\usecolortheme[rgb={0.1,0.5,0.7}]{structure}
+\usepackage{beamerthemesplit}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{amsmath} %pakiet matematyczny
+\usepackage{amssymb} %pakiet dodatkowych symboli
+	\title{Materia³y do kolokwium z \TeX 'a}
+\begin{document}
+	\frame{
+		\frametitle{Formatowanie tekstu}
+		%\begin{block}{Blok}
+		%	Tu podaj treœæ.
+		%\end{block}
+		%\begin{exampleblock}{Blok do podawania przyk³adów}
+		%	Tu podaj przyk³ad.
+		%\end{exampleblock}
+		%\begin{alertblock}{Blok uwag.}
+		%	Tu podaj istotn¹ uwage.
+		%\end{alertblock}
+	}
+	\frame{
+		\frametitle{Formu³y matematyczne}
+		\begin{block}{Ka¿d¹ formu³ê zapisuj w znacznikach}
+		 \ begin\{equation\} \\
+				Tu wstaw jakaœ formu³ê matematyczn¹. \\
+		 \ end\{equation\}
+		\end{block}
+		\begin{exampleblock}{Przyk³adowe formu³y matematyczne}
+			\begin{enumerate}
+				\item U³amek: frac\{1\}\{x\}$$= \frac{1}{x}$$
+				\item Indeks górny: x\^\{2\}$$= x^{2}$$
+				%%\item Indeks dolny: x\_2 $$= x_2$$
+				%%\item Pierwiastek z x: sqrt\{x\} $$= \sqrt{x} $$
+				\item Pierwiastek sqrt[y]\{x\} = $$\sqrt[y]{x}$$
+			\end{enumerate}
+		\end{exampleblock}
+	}
+	\frame{
+		\frametitle{Tabele i obrazy}
+	}
+	\frame{
+		\frametitle{Beamer}
+	}
+\end{document}
