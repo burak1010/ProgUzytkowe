@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage[a4paper,left=3.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+%%\usepackage[MeX]{polski}
+\usepackage[cp1250]{inputenc}
+\usepackage{polski}
+%%\usepackage[utf8]{inputenc}
+\usepackage[pdftex]{hyperref}
+\usepackage{makeidx}
+\usepackage[tableposition=top]{caption}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{amsmath} %pakiet matematyczny
+\usepackage{amssymb} %pakiet dodatkowych symboli
+\begin{document}
+	\begin{equation}
+		|U|=sup\{|x-y|:x,y \in U\}
+	\label{eq: 1}
+	\end{equation}
+	\begin{equation}
+		F \subset \sum_{i=1}^{\infty} U_{i} \text{, gdzie } 0 <|U_{i}|\leqslant \delta \text{ dla ka¿dego i,}
+	\label{eq: 2}
+	\end{equation}
+	\begin{equation}
+		H^8_{\partial} = inf \Bigg\{ \sum_{i=1}^{\infty}|U_i|^{s} :\{U_i\} \text{ jest } \delta \text{ - pokryciem F} \Bigg\}
+	\label{eq: 3}
+	\end{equation}
+	\begin{equation}
+		H^{s}(F) = \lim_{\delta\to 0} H_\delta^{s}(F)
+	\label{eq: 4}
+	\end{equation}
+	\begin{equation}
+		H^{s}(F) =  
+			\left\{
+				\begin{array}[c]
+					c{\infty} \text{ jeœli }s < dim_H F\\
+					0 \text{ jeœli } s > dim_H F \\
+				\end{array}
+			\right.
+	\label{eq: 5}
+	\end{equation}
+	\begin{equation}
+		\overline{dim}_B F = lim_{\delta \to 0} sup \frac{log N_\delta (F)}{-log \delta}
+	\label{eq: 6}
+	\end{equation}
+	\begin{equation}
+		\begin{array}[c]
+			c{\overline{dim}_B F = \lim_{\delta \to 0} sup \frac{log N_\delta (F)}{-log \delta} \leqslant \lim_{k \to \infty} sup \frac{log2^{k}}{log3^{k-1}} = \frac{log2}{log3}} \\ \\
+			\phi_t[\phi_\tau (x)] = \phi_{t+\tau} (x) \\ \\
+			\frac{dx}{dt} = -10x + 10y \\
+			\frac{dy}{dt} = rx - y - xz \\
+			\frac{dz}{dt} = \frac{8}{3}z + xy	\hspace{16.5pt}
+		\end{array}
+	\label{eq: 7}
+	\end{equation}
+	\begin{equation}
+		\begin{array}[c]
+			c{\rho(f(x_1), f(x_2)) \leqslant \lambda \rho(x_1, x_2)} \\ \\
+			R_U (\delta) = 
+			\left[ 
+					\begin{array}[c]
+						r{cos\delta \ sin\delta \ 0} \\
+						-sin\delta \ cos\delta \ 0 \\
+						0 \hspace{15pt} \ 0 \hspace{10pt} \  1
+					\end{array}
+			\right]
+		\end{array}	
+	\label{eq: 8}
+	\end{equation}
+	
+		\begin{verbatim}
+	for{int i=0;i<10;i++}
+	{
+	cout<<"i="<<i;
+	}
+	\end{verbatim}
+	Algorytm zach³anny 
+	\indent GREEDY(M,w)
+	\indent uporz¹dkuj S[M] nierosn¹co wed³ug wagi w 
+	\begin{algorithmic}
+	\FOR x \in S[M], brane w porz¹dku nierosn¹cym wed³ug wagi w(x) \DO
+		\item \IF A \cup x \in \rho[M] \THEN \\
+			A \gets A \cup x
+		\ENDIF
+	\ENDFOR
+	\RETURN A
+	\end{algorithmic}
+\end{document}
