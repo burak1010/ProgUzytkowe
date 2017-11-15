@@ -1,0 +1,70 @@
+\documentclass[]{beamer}
+%\usepackage[MeX]{polski}
+\usepackage[cp1250]{inputenc}
+\usepackage{polski}
+%\usepackage[utf8]{inputenc}
+\beamersetaveragebackground{blue!10} % {kolor slajdu!przezroczystkosc_koloru}
+\usetheme{Warsaw}
+\usecolortheme[rgb={0.1,0.5,0.7}]{structure}
+\usepackage{beamerthemesplit}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{amsmath} %pakiet matematyczny
+\usepackage{amssymb} %pakiet dodatkowych symboli
+\usepackage{wrapfig}
+	\title{Materia³y do kolokwium z \TeX 'a}
+\begin{document}
+	\frame{
+		\frametitle{Formatowanie tekstu}
+		\begin{block}{Klasy dokumentów w \TeX}
+			\begin{table}
+				\begin{tabular}{l|l}
+					Klasy & Podzial dokumentu w formacie article \\
+					\begin{enumerate}\item article-artyku?y \end{enumerate} & a 
+				\end{tabular}
+			\end{table}
+		\end{block}
+		\begin{block}{Punktowanie i numeracja}
+			\begin{table}
+				\centering
+				\begin{tabular}{l l}
+					Punktowanie & Numeracja \\ \hline \\
+					$\backslash$begin\{itemize\} & $\backslash$begin\{enumerate\} \\
+						\hspace{20pt} $\backslash$item punkt 1 & \hspace{20pt} $\backslash$item punkt 1 \\
+						\hspace{20pt} $\backslash$item punkt 2 & \hspace{20pt} $\backslash$item punkt 2 \\
+					$\backslash$end\{itemize\} & $\backslash$end\{enumerate\}
+				\end{tabular}
+			\end{table}
+		\end{block}
+	}
+	\frame{
+		\frametitle{Formuy? matematyczne}
+		\begin{block}{Ka¿d¹ formu³ê zapisuj w znacznikach}
+		 $\backslash$begin\{equation\}\\
+				%\begin{center} 
+				\indent Tu wstaw jakaœ formu³ê matematyczn¹.\indent \\ %\end{center}
+		 $\backslash$end\{equation\}
+		\end{block}
+		\begin{exampleblock}{Przyk³adowe formu³y matematyczne}
+			\begin{enumerate}
+				\item U³amek: $\backslash$frac\{1\}\{x\}
+				%\item Indeks górny: x\^  \{2\} %=$$x^{2}$$ \\
+				\item Indeks dolny: x\_2 %$$= x_2$$
+				\item Pierwiastek z x: $\backslash$sqrt\{x\} %$$= \sqrt{x} $$
+				\item Pierwiastek z x stopnia y: $\backslash$sqrt[y]\{x\} %=$$\sqrt[y]{x}$$ \\
+			\end{enumerate}
+		\end{exampleblock}
+		\begin{alertblock}{Uwaga!}
+			Znaki specjalne typu \o,  \&, \%, \$, \{ etc. musz? by? uprzedzane znakiem "backslash", np. $\backslash$\& .
+		\end{alertblock}
+		}
+	\frame{
+		\frametitle{Tabele i obrazy}
+	}
+	\frame{
+		\frametitle{Beamer}
+	}
+\end{document}

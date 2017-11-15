@@ -1,9 +1,9 @@
 \documentclass{article}
 \usepackage[a4paper,left=3.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
-%%\usepackage[MeX]{polski}
-%%\usepackage[cp1250]{inputenc}
+\usepackage[MeX]{polski}
+%\usepackage[cp1250]{inputenc}
 \usepackage{polski}
-\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{inputenc}
 \usepackage[pdftex]{hyperref}
 \usepackage{makeidx}
 \usepackage[tableposition=top]{caption}
@@ -14,12 +14,11 @@
 \usepackage{amsmath} %pakiet matematyczny
 \usepackage{amssymb} %pakiet dodatkowych symboli
 \begin{document}
-%%	$ tu umie?? jaki? wzóz $ = \begin{equation} tu umiesc jaki? wzór \end{equation}
-	%% \ - oddzielenie
-	%% Etykieta:
-		%% Deklaracja: label{nazwa_etykiety}, 
-		%% Odwo?anie: \equref{nazwa_etykiety}
-	%% a nale??ce do zbioru A:
+$ miejsce na wzor $ 
+\begin{equation} miejsce na wzor \end{equation}
+	Etykieta(deklaracja): \label{nazwa_etykiety}, 
+	Etykieta (odwolanie): \equref{nazwa_etykiety}
+	a nalezace do zbioru A:
 	%% a\in\mathbb{A}
 	
 	%% U?amek 1/x: \frac{1}{x}
@@ -49,3 +48,22 @@
 	\biguplus \\
 \end{equation}
 \end{document}
+textsf{...} – czcionka bezszeryfowa,
+texttt{...} – czcionka o sta?ej szeroko?ci,
+textit{...} – czcionka pochy?a,
+textbf{...} – czcionka pogrubiona,
+textsc{...} – ma?e kapitaliki,
+uppercase{...} – fragment pisany wielkimi literami.
+
+\Huge
+\huge
+\LARGE
+\Large
+\large
+\normalsize
+\small
+\footnotesize
+\scriptsize
+\tiny
+
+\color{red}
