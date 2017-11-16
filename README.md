@@ -1,3 +1,2 @@
-# ProgUzytkowe 
-# Natalia Æwikliñska
-## "Opis projektu"
+# Programy UÅ¼ytkowe 
+# Natalia Ä†wikliÅ„ska
